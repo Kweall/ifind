@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    height: 80px;
+    border-bottom: 1px solid #E4E4E4;
+    position: fixed;
+}
+
+.navigation {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-right: 120px;
+}
+
+.button_on {
+    color: #69B99D;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button_off {
+    color: #0F241D;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button_off:hover {
+    color: #69B99D;
+    border-bottom: 1px solid #69B99D;
+}

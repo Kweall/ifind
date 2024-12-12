@@ -1,0 +1,153 @@
+.holidays {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    padding-top: 80px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.dates {
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.date:hover {
+    background-color: #e0e0e0;
+}
+
+.selectedDate {
+    background-color: #69B99D;
+    color: white;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.holidayGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.holidayCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.holidayCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.holidayImage {
+    width: 100%;
+    height: 150px;
+    background: #69B99D;
+    padding: 20px;
+}
+
+.holidayInfo {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.holidayDate {
+    font-size: 14px;
+    color: #767676;
+}
+
+.holidayName {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.noData {
+    font-size: 18px;
+    font-weight: 500;
+    color: #767676;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loadingSpinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.loadingSpinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #69B99D; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.5s linear infinite; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); 
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}

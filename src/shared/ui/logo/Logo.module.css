@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 120px;
+}
+
+.black_text {
+    color: #0F241D;
+}
+
+.green_text {
+    color: #69B99D;
+}
